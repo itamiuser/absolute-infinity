@@ -40,6 +40,12 @@ a {
 		url('../fonts/segoe_ui.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Consolas';
+	src: url('../fonts/consolas.woff2') format('woff2'),
+		url('../fonts/consolas.woff') format('woff'), 
+		url('../fonts/consolas.ttf') format('truetype');
+}
 
 body {
 	margin: 0;
