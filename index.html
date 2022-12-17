@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./assets/img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/root.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/landing-style.css">
+	<title>Absolute Infinity</title>
+</head>
+
+<body>
+	<header class="header mdl">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 header-items">
+					<div class="col-xl-3 col-md-6 jcs"><a href="#main" class="logo-title">Absolute Infinity</a></div>
+					<div class="col-xl-6 mdl"><div class="logo-img"></div></div>
+					<div class="col-xl-3 col-md-6 jce">
+						<div class="burger-menu">
+							<nav class="menu-nav mdl">
+								<a href="./contacts.html" class="menu-btn">ShareCode</a>
+								<a href="#contacts" class="menu-btn">Contacts</a>
+							</nav>
+						</div>
+						<div class="header-burger">
+							<span class="burger-lines"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="files-container">
+		<div class="container">
+			<div class="row">
+				<!-- space -->
+				<div class="col-xl-1"></div>
+				<div class="col-xl-5">
+					<div class="download-block mdl" id="main">
+						<h1>Download Files</h1>
+						<div class="searchbox mdl">
+							<input type="text" class="search-input" placeholder="Search...">
+							<div class="elements none"></div>
+						</div>
+						<div class="file-info-container">
+							<div class="folder-img"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-5">
+					<div class="upload-block mdl">
+						<h1>Upload Files</h1>
+						<div class="file-select-container mdl">
+							<div class="cloud-img"></div>
+							<div class="fileslist mdl none"></div> 
+							<form action="upload-handler.php" class="mdl">
+								<label class="selectfiles-btn sbtn">
+									<span>Select Files</span>
+									<input type="file" name="files" multiple hidden>
+								</label>
+								<input type="submit" name="upldbtn" value="Upload" class="upload-btn sbtn">
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- space -->
+				<div class="col-xl-1"></div> 
+			</div>
+		</div>
+	</main>
+
+	<div class="extra">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="mdl">
+						<h1 class="manual">Instruction</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6">
+					<div class="etext">
+						<p>На этой странице Вы можете <b>обмениваться файлами</b>. Например картиками, документами или видео.</p>
+						<p>При <span class="pnk">загрузке файлов на сайт</span> <b>учтите</b> что их размер не должен превышать <b>30 МБ!</b></p>
+					</div>
+					<div class="cloudpc"></div>
+				</div>
+				<div class="col-xl-6">
+					<div class="servericon"></div>
+					<div class="etext">
+						<p>В <b>левом окне</b> можно <span class="pnk">найти и скачать</span> загруженные на сайт файлы, при помощи строки поиска.</p>
+						<p>В <b>правом окне</b> можно <span class="prp">загрузить файлы на сайт</span>, что бы потом другие могли их найти и скачать.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		
+	</footer>
+	<!-- Bootstrap JS -->
+	<script type="text/javascript" src="./assets/scripts/bootsrap.js"></script>
+	<!-- Events -->
+	<script type="text/javascript" src="./assets/scripts/handler.js"></script>
+</body>
+
+</html>

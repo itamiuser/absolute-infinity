@@ -1,0 +1,90 @@
+
+:root {
+
+	/* COLORS */
+	--purple: #7900A4;
+	--bpurple: #8000FF;
+
+	--purpink: #CA00FF;
+	--pink: #FF00A8;
+	
+	--dgray: #101112;
+	--gray: #646464;
+	--lgray: #B9B5B5;
+	--vlgray: #D9D9D9;
+
+	--f: #FFFFFF;
+	--light: #F0F0F0;
+	--dark: #0F0F0F;
+
+	/* FONTS */
+	--text: "Blinker-Light";
+	--rutext: "Segoe UI";
+	--title: "Consolas";
+}
+
+a {
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'Blinker-Light';
+	src: url('../fonts/blinker-light.woff2') format('woff2'),
+		url('../fonts/blinker-light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/segoe_ui.woff2') format('woff2'),
+		url('../fonts/segoe_ui.woff') format('woff'), 
+		url('../fonts/segoe_ui.ttf') format('truetype');
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--dgray);
+}
+
+/* Align center */
+.mdl, .jcc, .jcs, .jce{
+	display: flex;
+	align-items: center;
+}
+.mdl {justify-content: center;}
+.jcs {justify-content: flex-start;}
+.jce {justify-content: flex-end;}
+
+.none {
+	z-index: -100 !important;
+	opacity: 0;
+	height: 0 !important;
+	width: 0 !important;
+	margin: 0 !important;
+	padding: 0;
+	border: none !important;
+}
+.sbtn {
+	width: 200px;
+	height: 36px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background:	linear-gradient(90deg, var(--pink),var(--bpurple));
+	border-radius: 18px;
+	color: var(--f);
+	font-family: var(--text);
+	font-size: 14pt;
+	font-weight: bold;
+	transition: all 0.5s ease;
+	margin: 15px;
+}
+.sbtn:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px var(--purpink);
+	color: var(--f);
+}
+.sbtn:active {
+	box-shadow: inset 0 0 10px var(--dark);
+}
